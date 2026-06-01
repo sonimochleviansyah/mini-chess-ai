@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Chess AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>♟ Mini Chess AI</h1>
+
+        <div class="game-layout">
+
+            <div class="side-panel">
+                <div class="card">
+                    <h2>AI INFO</h2>
+                    <p>Algorithm: Alpha-Beta</p>
+                    <p>Search Depth: 3</p>
+                    <p>Status: Online</p>
+                </div>
+
+                <div class="card">
+                    <h2>PERFORMANCE</h2>
+                    <p>Nodes Evaluated: <span id="nodes">0</span></p>
+                    <p>Pruned Branches: <span id="pruned">0</span></p>
+                </div>
+            </div>
+
+            <div class="main-game">
+                <div id="status">Player Turn</div>
+                <div id="board"></div>
+                <button id="restartBtn">Restart Game</button>
+            </div>
+
+            <div class="side-panel">
+                <div class="card">
+                    <h2>PIECES</h2>
+                    <p>♚ AI King</p>
+                    <p>♜ AI Rook</p>
+                    <p>♟ AI Pawn</p>
+                    <hr>
+                    <p>♔ Player King</p>
+                    <p>♖ Player Rook</p>
+                    <p>♙ Player Pawn</p>
+                </div>
+
+                <div class="card">
+                    <h2>MOVE HISTORY</h2>
+                    <div id="history">
+                        <p>Game Started</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="particles"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
